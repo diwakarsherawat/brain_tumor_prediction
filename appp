@@ -1,7 +1,14 @@
- import streamlit as st
+import streamlit as st
 import numpy as np
 from PIL import Image
 import tensorflow as tf
+import os
+
+model_path = "brain_tumor_cnn_model.h5"
+if not os.path.exists(model_path):
+    import gdown
+    url = "https://drive.google.com/uc?id=1aHyWAONr662uKP30DGz3NE__1Oszz8Xh"
+    gdown.download(url, model_path, quiet=False)
 
 # Load trained model
 model = tf.keras.models.load_model("brain_tumor_cnn_model.h5")
