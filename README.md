@@ -26,18 +26,7 @@ The dataset used is from [Kaggle - Brain Tumor MRI Dataset](https://www.kaggle.c
 - `pituitary_tumor/`
 - `no_tumor/`
 
-**Dataset Structure:**
-├── Training/
-│ ├── glioma_tumor/
-│ ├── meningioma_tumor/
-│ ├── pituitary_tumor/
-│ └── no_tumor/
-├── Testing/
-│ ├── glioma_tumor/
-│ ├── meningioma_tumor/
-│ ├── pituitary_tumor/
-│ └── no_tumor/
----
+
 ## 🧬 Model Architecture
 
 The model is built using **TensorFlow/Keras** with a Convolutional Neural Network (CNN). Below is a simplified architecture:
